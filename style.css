@@ -1,0 +1,26 @@
+:root{--bg:#0e1116;--panel:#161b22;--line:#252c36;--text:#e6e8ea;--muted:#8b949e;--red:#ef5350;--green:#26a69a;--amber:#f5b942}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-variant-numeric:tabular-nums}
+main{max-width:640px;margin:0 auto;padding:16px 14px 32px}
+h1{font-size:1.1rem;font-weight:600;margin:0 0 6px}
+h2{font-size:1rem;font-weight:600;margin:0 0 4px}
+.muted{color:var(--muted)}.small{font-size:.8rem;margin:0 0 10px}
+.price-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.price{font-size:2.6rem;font-weight:700;letter-spacing:-.02em}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--muted);align-self:center}
+.dot.ok{background:var(--green)}.dot.err{background:var(--red)}
+.banner{margin:12px 0;padding:10px 12px;border:1px solid var(--amber);border-radius:6px;color:var(--amber);font-size:.9rem}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:14px 0 20px}
+.info div{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 12px;display:flex;flex-direction:column;gap:2px}
+.info span{font-size:.75rem}.info b{font-size:.95rem;font-weight:600}
+.ladder{border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.row{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:11px 12px;background:var(--panel);border-bottom:1px solid var(--line);border-left:4px solid var(--muted)}
+.row:last-child{border-bottom:0}
+.row.res{border-left-color:var(--red)}.row.sup{border-left-color:var(--green)}.row.flip{border-left-color:var(--amber)}
+.row .name{font-weight:600}.row .val{text-align:right;font-weight:600}
+.row .sub{color:var(--muted);font-size:.8rem}.row .dist{text-align:right;font-size:.8rem}
+.res .dist{color:var(--red)}.sup .dist{color:var(--green)}
+.row.now{background:#1d2530;border-left-color:#fff}
+.row.now .val{font-size:1.1rem}
+.disclaimer{color:var(--muted);font-size:.78rem;margin-top:22px;text-align:center}
+@media (prefers-reduced-motion:no-preference){.dot.ok{animation:p 2s ease-in-out infinite}@keyframes p{50%{opacity:.4}}}

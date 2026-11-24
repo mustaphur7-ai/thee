@@ -1,0 +1,25 @@
+{
+  "sample": true,
+  "analyzed_at": "2026-11-24T17:33:00+03:00",
+  "analyzed_at_utc": "2026-11-24T14:33:00+00:00",
+  "spot_source": "sample",
+  "gld_ratio": 10.84,
+  "gld_spot": 327.21,
+  "xauusd_spot_at_analysis": 3547.0,
+  "atm_iv": 0.17,
+  "expected_move_1sd": 38.0,
+  "call_wall": {"price": 3636.0, "open_interest": 12000, "gex": 3890000},
+  "put_wall": {"price": 3494.0, "open_interest": 14500, "gex": -3640000},
+  "gamma_flip": 3550.0,
+  "resistances": [
+    {"price": 3580.0, "score": 71.2, "open_interest": 9800, "gex": 4130000},
+    {"price": 3600.0, "score": 58.4, "open_interest": 7200, "gex": 1980000},
+    {"price": 3636.0, "score": 55.1, "open_interest": 12000, "gex": 3890000}
+  ],
+  "supports": [
+    {"price": 3530.0, "score": 49.8, "open_interest": 6100, "gex": 1420000},
+    {"price": 3510.0, "score": 62.3, "open_interest": 8900, "gex": 2410000},
+    {"price": 3494.0, "score": 74.6, "open_interest": 14500, "gex": 3640000}
+  ],
+  "top_gex_strikes": []
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XAUUSD Levels</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>XAUUSD levels</h1>
+    <div class="price-row">
+      <span id="price" class="price">--</span>
+      <span id="dot" class="dot"></span>
+      <span id="priceMeta" class="muted">Connecting to Binance</span>
+    </div>
+  </header>
+
+  <div id="banner" class="banner" hidden></div>
+
+  <section class="info">
+    <div><span class="muted">Analysis</span><b id="analyzed">--</b></div>
+    <div><span class="muted">GLD ratio</span><b id="ratio">--</b></div>
+    <div><span class="muted">Next analysis in</span><b id="countdown">--</b></div>
+  </section>
+
+  <section>
+    <h2>Levels</h2>
+    <p class="muted small">Frozen until the next analysis. Only the price and distances update live.</p>
+    <div id="ladder" class="ladder"></div>
+  </section>
+
+  <p class="disclaimer">Information only, not financial advice. Levels are estimates from delayed GLD options data.</p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
